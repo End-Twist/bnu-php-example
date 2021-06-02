@@ -36,8 +36,6 @@ if (isset($_SESSION['id'])) {
       $row = mysqli_fetch_array($result);
 
       // using <<<EOD notation to allow building of a multi-line string
-      // see http://stackoverflow.com/questions/6924193/what-is-the-use-of-eod-in-php for info
-      // also http://stackoverflow.com/questions/8280360/formatting-an-array-value-inside-a-heredoc
       $data['content'] = <<<EOD
 
    <h2>My Details</h2>
